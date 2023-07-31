@@ -11,7 +11,7 @@
 <body>
     <header>
 
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
             <div class="container-fluid">
               <a class="navbar-brand" href="#">A&M Consultores</a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
@@ -20,13 +20,13 @@
               <div class="collapse navbar-collapse" id="navbarText">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                   <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Quienes Somos</a>
+                    <a class="nav-link active" aria-current="page" href="#servicios">Nuestros Servicios</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Nuestros Servicios</a>
+                    <a class="nav-link" href="#qsomos">Quienes Somos</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Contacto</a>
+                    <a class="nav-link" href="#contacto">Contactanos</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" href="#">Registro de Clientes</a>
@@ -49,12 +49,12 @@
 
         </section>
 
-        <section class="cards">
-          <h1 class="titulo2">Nuestros Servicios</h1>
+        <section class="cards" id="servicios">
+          <h2 class="titulo2">Nuestros Servicios</h2>
           <div class="row row-cols-1 row-cols-sm-3 g-4">
             <div class="col">
               <div class="card h-100">
-                <img src="imagens/card1.jpg" class="img-fluid"   alt="...">
+                <img src="imagens/card1.jpg" class="card-img-top imgcards"   alt="...">
                 <div class="card-body">
                   <h5 class="card-title">Asesorias</h5>
                   <p class="card-text">Ofrecemos asesoría en SST para un ambiente laboral seguro y saludable. Expertos en evaluación de riesgos, capacitaciones y cumplimiento de regulaciones. Mejora la productividad y bienestar de tu empresa con nuestra asesoría especializada.</p>
@@ -63,7 +63,7 @@
             </div>
             <div class="col">
               <div class="card h-100">
-                <img src="imagens/card2.jpg" class="card-img-top" alt="...">
+                <img src="imagens/card2.jpg" class="card-img-top imgcards" alt="...">
                 <div class="card-body">
                   <h5 class="card-title">Innovaciones tecnológicas aplicadas a la SST</h5>
                   <p class="card-text">Ofrecemos innovaciones tecnológicas en SST para mejorar la seguridad laboral, prevenir riesgos y optimizar procesos. Impulsa un ambiente de trabajo más seguro y saludable con nuestras soluciones especializadas..</p>
@@ -72,7 +72,7 @@
             </div>
             <div class="col">
               <div class="card h-100">
-                <img src="imagens/card3.jpg"    class="card-img-top" alt="...">
+                <img src="imagens/card3.jpg" class="card-img-top imgcards" alt="...">
                 <div class="card-body">
                   <h5 class="card-title">Administraciòn e implementaciòn del SG-SST</h5>
                   <p class="card-text">Ofrecemos servicios de administración e implementación del SG-SST para mejorar la salud laboral y cumplir con las regulaciones en tu empresa.</p>
@@ -80,10 +80,64 @@
               </div>
             </div>
           </div>
-                
-                  
 
         </section>
+
+        
+        
+        <section class="sec2" id="qsomos">
+          <img src="imagens/qsomos.png"  class="imgsec2"  alt="...">
+          
+          <p class="parrafosec2">Somos una empresa especializada en asesoría en Seguridad y Salud en el Trabajo (SST) y soluciones tecnológicas. Nuestro enfoque es garantizar un ambiente laboral seguro y saludable, cuidando el recurso más valioso: el recurso humano. Con más de 10 años de experiencia, ofrecemos soluciones innovadoras para mejorar la productividad y el bienestar de nuestros clientes.</p>
+         
+
+        </section>
+
+        <section class="contenedor" id="contacto">
+
+        <section class="sec3">
+          <h2 class="titulo4"> Contactanos</h2>
+
+          <form class="formulario">
+            <p>
+              <label for="nombre" class="titulosInput">Nombre Completo:</label>
+              <input type="text" id="nombre">
+            </p>
+            
+            <p>
+              <label for="celular" class="titulosInput" >Celular:</label>
+              <input type="number" id="celular">
+            </p>
+
+            <p>
+              <label for="correo" class="titulosInput">Correo electrónico:</label>
+              <input type="email" id="correo">
+            </p>
+
+            <p>
+              <label for="empresa" class="titulosInput">Nombre de la empresa:</label>
+              <input type="text" id="empresa">
+            </p>
+
+            <p>
+              <label for="mensaje" class="titulosInput">Mensaje:</label>
+              <textarea id="mensaje"></textarea>
+            </p>
+
+            <button type="submit" class="btnEnviar"> Enviar </button>
+
+
+          </form>
+
+          
+
+        </section>
+
+
+
+      </section>
+
+        <footer></footer>
 
 
 
